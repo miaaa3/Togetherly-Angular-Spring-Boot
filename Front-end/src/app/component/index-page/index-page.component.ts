@@ -21,12 +21,12 @@ export class IndexPageComponent implements OnInit {
     this.getUserDetails();
   }
 
-  checkRoleAdminTeacher() {
-    return (
-      this.decodeJwt.roles[0] == 'ROLE_ADMIN' ||
-      this.decodeJwt.roles[0] == 'ROLE_TEACHER'
-    );
-  }
+  // checkRoleAdminTeacher() {
+  //   return (
+  //     this.decodeJwt.roles[0] == 'ROLE_ADMIN' ||
+  //     this.decodeJwt.roles[0] == 'ROLE_TEACHER'
+  //   );
+  // }
 
   getUserDetails() {
     this.userServ.getUserToken().subscribe(

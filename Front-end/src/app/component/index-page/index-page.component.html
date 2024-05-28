@@ -4,7 +4,7 @@
         <app-show-profile class="w-full flex justify-center" ></app-show-profile>
     </div>
     <div class="lg:col-span-2 gap-4 flex flex-col">
-        <app-create-post *ngIf="checkRoleAdminTeacher()"  [userDetails]="userDetails"></app-create-post>
+        <app-create-post   [userDetails]="userDetails"></app-create-post>
         <app-show-post #childShowPost ></app-show-post>
     </div>
     <div class="gap-3 flex flex-col max-[1027px]:hidden">
